@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Lypa Zhovtenko} \\ \vspace{7pt}
+    \small Junior DevOps Engineer \( \cdot \) Odesa, Ukraine \( \cdot \) Remote \( \cdot \) Salary \$800-1000 \\
+    \small +380979405453 \( \cdot \) \href{mailto:lipleaplypa@gmail.com}{\underline{lipleaplypa@gmail.com}} \( \cdot \)
+    \href{https://t.me/lipleaplypa}{\underline{t.me/lipleaplypa}} \( \cdot \)
+    \href{https://linkedin.com/in/lipleaplypa}{\underline{linkedin.com/in/lipleaplypa}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {OKKT ODEKU}{Odesa, Ukraine}
+      {Software Engineering}{2017 -- 2021}
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Upper Intermediate -- Proficient} \\
+     \textbf{Programming}{: Shell, Python, JavaScript, Clojure, Nix} \\
+     \textbf{Linux}{: RHEL, Ubuntu, NixOS, Alpine Linux} \\
+     \textbf{Containers}{: Docker, Podman, systemd-nspawn, cgroups} \\
+     \textbf{Orchestration}{: Terraform, Kubernetes, Ansible, Nix} \\
+     \textbf{Networking}{: firewalld/nftables, routing, DNS, SSH, SMTP, nginx, Consul, Traefik } \\
+     \textbf{CI/CD}{: GitHub, GitLab, Drone CI, Jenkins} \\
+     \textbf{DB}{: PostgreSQL, ElasticSearch, MySQL, MongoDB} \\
+     \textbf{Monitoring}{: Grafana, Prometheus, Loki, alertmanager} \\
+     \textbf{Providers}{: AWS, Hetzner, bare metal}
+    }}
+ \end{itemize}
+
+\section{Traits}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Pedantic to work. Can stay hardy and focused for a long time. Open-minded to new ideas, propositions, and critics. Always cooperative with teammates in achieving project goals. Can take responsibility and be a leader.
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SelfPrivacy} \emph{NixOS, Podman, Python, Flutter, GitHub CI/CD, Grafana}}{Jun 2022 -- Mar 2023 }
+          \resumeItemListStart
+            \resumeItem{\emph{Project abstract}: manage your NixOS server and services with no code nor admin via Flutter application}
+            \resumeItem{Designed and built automated stateless NixOS infrastructure, highly superior to traditional ones}
+            \resumeItem{Maintained centralized NixOS system workflow configuration and own Nix Flakes packages}
+            \resumeItem{Created secure, isolated, and rootless CI/CD pipeline via Podman containers}
+            \resumeItem{Building, packaging, signing, and delivering to all of web, desktop, and mobile targets}
+            \resumeItem{Continuous integration testing for Flutter/NixOS application on various cloud providers}
+            \resumeItem{Monitored infrastructure stability and metrics via Grafana and Prometheus}
+            \resumeItem{Wrote developer and user-facing documentation}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{InnerEq} \emph{RHEL, Kubernetes, Elixir, Python, GitLab CI/CD, Grafana}}{Dec 2019 -- Jan 2021}
+          \resumeItemListStart
+            \resumeItem{\emph{Project abstract}: distributed social messaging systems using standard W3C protocols}
+            \resumeItem{Took the project in its insufficient Docker + docker-compose.yml state}
+            \resumeItem{Migrated to Ansible orchestration of Podman containers, reducing maintenance cost by half}
+            \resumeItem{Integrated new services on demand and maintained the stability of remaining ones}
+            \resumeItem{Administrated huge PostgreSQL and ElasticSearch databases, and a legacy MySQL database}
+            \resumeItem{Built services development and deployment infrastructure with GitLab CI/CD/CR}
+            \resumeItem{Migrated heavy-loaded services on Kubernetes cluster, greatly improving resource management}
+            \resumeItem{Monitored infrastructure stability and metrics via Grafana and Prometheus}
+            \resumeItem{Wrote developer and user-facing documentation}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
